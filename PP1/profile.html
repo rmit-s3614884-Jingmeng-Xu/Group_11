@@ -51,12 +51,13 @@
                  oLis[i].index = i;
                  oLis[i].onclick = function() {
                      for(var n= 0;n<len;n++){
-                         oLis[n].className = "";
-                         oDivs[n].className="hide";
-						 console.log(n);
+						
+							 oLis[n].className = "";
+							 oDivs[n].className="hide";
+						
                      }
 					
-                     this.className ="on";
+						  this.className ="on";
                      oDivs[this.index].className = "";
                  }
              };
@@ -67,12 +68,13 @@
 		  <li class="on">Profile</li>
 		<li>Participating</li>
 		<li>Published</li>
-		<li>Exit</li>
+		<li >Exit</li>
 	  </ul>
+		
 	<div> 111111111</div>
 	<div class="hide"> 2222222222</div>
 	<div class="hide">3333333333333 </div>
-		<div class="hide">44444444444 </div>
+		<div class="hide">44444444444444 </div>
   </div>
 </div>
 </body>
