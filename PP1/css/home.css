@@ -35,12 +35,14 @@ body {
     background-color: white;
     padding: 0;
     margin: 0;
+	border-bottom: 1px solid black;
 }
 
 body {
-    background-image: url("http://vitlt.com/wp-content/uploads/2017/05/graphic-design-office-2innovate-graphic-design-office.jpg");
+    background-image:url(../image/1.webp);
     background-size: 100%;
     background-repeat: no-repeat;
+	background-position:0 80px;
 }
 
 #login_frame {
@@ -57,7 +59,45 @@ body {
     text-align: center;
     vertical-align: middle;
 }
-
+#proimage{
+	width:100%;
+	
+}
+#shadow1{
+	width:100%;
+	height:300px;
+	background-color:white;
+	position:absolute;
+	left:0px;
+	top:170px;
+}
+#userimage{
+	position:relative;
+	top:-60px;
+	left:150px;
+	width:9%;
+}
+#username{
+	position:relative;
+	top:-150px;
+	left:220px;
+	color:white;
+	font-size:32px;
+	font-family: "Times New Roman";
+}
+#times{
+	position:relative;
+	top:-200px;
+	left:820px;
+	color:white;
+	font-size:23px;
+	font-family: "Times New Roman";
+	text-align: center;
+	
+}
+#times td{
+	padding-right:50px;
+}
 form p>* {
     display: inline-block;
     vertical-align: middle;
@@ -66,6 +106,72 @@ form p>* {
 
 #image_logo {
     margin-top: 25px;
+}
+
+#editprofile{
+	position:relative;
+	top:-245px;
+	left:1300px;
+	border:1px solid white;
+	color:white;
+	padding:15px;
+	border-radius: 25px;
+}
+#editprofile:hover{
+	border:2px solid white;
+	left:1299px;
+}
+
+#tabs {height:300px;padding:5px;margin:20px;width:100px;}
+#tabs ul{
+	display: block;height:300px;
+	position:relative;
+	top:-100px;
+	left:0px;
+	width:100%;
+	z-index: 2;
+
+}
+#tabs ul li{
+	list-style:none;
+	text-align: center;
+	padding-top: 15px;
+	cursor:pointer;
+	margin-bottom: 30px;
+	width:150px;
+	height:40px;
+	line-height:28px;
+	border:1px solid black;
+	
+	color:black;
+	font-size:20px;
+	background-color: white;
+}
+ #tabs ul li.on{
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:2px solid white;
+}
+#tabs ul li:hover{
+
+}
+#tabs div{
+	position:relative;
+	top:-450px;
+	left:191px;
+	width:1300px;
+	height:150%;
+	border:1px solid black;
+z-index: 1;
+	
+}
+.hide{
+	display:none;
+}
+
+.myButton{
+	text-decoration:none;
 }
 
 .label_input {
@@ -105,6 +211,14 @@ form p>* {
 
 #login_control {
     padding: 15px 125px;
+}
+#shadow{
+	width:100%;
+	height:89%;
+	margin:auto auto;
+	
+	background-color:white;
+
 }
 
 .input-group,

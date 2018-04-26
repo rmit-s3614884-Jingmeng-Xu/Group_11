@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uuser profile page</title>
+<link rel="stylesheet" type="text/css" href="css/home.css" />
+
+</head>
+
+<body>
+<div id="bar">
+  <div id="logo">
+    <image src="image/1.png"></image>
+  </div>
+  <div id="square3" style="width:120;height:80;text-align:center;line-height:80px;">About</div>
+  <a href="login.html">
+  <div id="square2" style="width:120;height:80;text-align:center;line-height:80px;">Login</div>
+  </a> <a href="register.html">
+  <div id="square1" style="width:120;height:80;text-align:center;line-height:80px;">Register</div>
+  </a> </div>
+<div id="shadow">
+  <image src="image/temp1.png" id="proimage"></image>
+  <div id="shadow1">
+    <image src="image/userimage.png" id="userimage"></image>
+    <span id="username">Alex</span>
+	  
+	  <span >
+    <table id="times">
+      <tr>
+		     <td>Participating </td>
+		<td>Published</td>
+       
+      </tr>
+      <tr>
+      <td>0</td>
+        <td>0</td>
+      </tr>
+    </table>
+    </span>
+	  <a href="#" class="myButton"><span id="editprofile">Edit profile</span>
+	  </a>
+	 </div>
+	
+	  <script type="text/javascript">
+         window.onload = function(){
+             var oTab = document.getElementById("tabs");
+             var oUl = oTab.getElementsByTagName("ul")[0];
+             var oLis = oUl.getElementsByTagName("li");
+             var oDivs= oTab.getElementsByTagName("div");
+
+             for(var i= 0,len = oLis.length;i<len;i++){
+                 oLis[i].index = i;
+                 oLis[i].onclick = function() {
+                     for(var n= 0;n<len;n++){
+                         oLis[n].className = "";
+                         oDivs[n].className="hide";
+						 console.log(n);
+                     }
+					
+                     this.className ="on";
+                     oDivs[this.index].className = "";
+                 }
+             };
+         }
+    </script>
+	<div id="tabs">
+	  <ul>
+		  <li class="on">Profile</li>
+		<li>Participating</li>
+		<li>Published</li>
+		<li>Exit</li>
+	  </ul>
+	<div> 111111111</div>
+	<div class="hide"> 2222222222</div>
+	<div class="hide">3333333333333 </div>
+		<div class="hide">44444444444 </div>
+  </div>
+</div>
+</body>
+</html>

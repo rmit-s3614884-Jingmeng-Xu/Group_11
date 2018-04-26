@@ -27,11 +27,12 @@
 	margin:0;
 
 }
-body {  
-    background-image: url("http://vitlt.com/wp-content/uploads/2017/05/graphic-design-office-2innovate-graphic-design-office.jpg");;  
-    background-size: 100%;  
-    background-repeat: no-repeat;  
-}  
+body {
+    background-image:url(../image/1.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+	background-position:0 80px;
+}
   
 #login_frame {  
     width: 400px;  

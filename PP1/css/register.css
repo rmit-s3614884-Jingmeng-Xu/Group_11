@@ -28,9 +28,10 @@
 
 }
 body {
-    background-image: url("http://vitlt.com/wp-content/uploads/2017/05/graphic-design-office-2innovate-graphic-design-office.jpg");
+    background-image:url(../image/1.webp);
     background-size: 100%;
     background-repeat: no-repeat;
+	background-position:0 80px;
 }
 
 #login_frame {
@@ -42,11 +43,10 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -200px;
-    margin-top: -150px;
+    margin-top: -100px;
 
     background-color: rgba(240, 255, 255, 0.5);
 
-    border-radius: 10px;
     text-align: center;
 	vertical-align: middle;
 }
@@ -66,21 +66,19 @@ form p > * {
     font-family: "Times New Roman";
 
     width: 100px;
-    height: 35px;
+    height: 37px;
     line-height: 28px;
 
 
     color: white;
     background-color: #3CD8FF;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+  
 }
 
 .text_field {
     width: 278px;
     height: 35px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  	margin-left:-5px;
     border: 0;
 }
 
@@ -95,7 +93,7 @@ form p > * {
 	vertical-align: middle;
     color: white;
     background-color: #3BD9FF;
-    border-radius: 6px;
+   
     border: 0;
 
     float: left;
