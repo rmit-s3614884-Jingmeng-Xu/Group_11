@@ -65,17 +65,32 @@ body {
 }
 #shadow1{
 	width:100%;
-	height:300px;
+	height:76%;
 	background-color:white;
+	background-image:url(../image/1.webp);
 	position:absolute;
 	left:0px;
 	top:170px;
+
+}
+
+#shadow2{
+	background-color:rgba(255,255,255,0.52);
+	
+	position:relative;
+	top:-563px;
+	left:0;
+	width:100%;
+	height:76%;
+
+	z-index: 1;
 }
 #userimage{
 	position:relative;
 	top:-60px;
 	left:150px;
 	width:9%;
+	z-index: 2;
 }
 #username{
 	position:relative;
@@ -129,7 +144,7 @@ form p>* {
 	top:-100px;
 	left:0px;
 	width:100%;
-	z-index: 2;
+	z-index: 3;
 
 }
 #tabs ul li{
@@ -148,13 +163,16 @@ form p>* {
 	background-color: white;
 }
  #tabs ul li.on{
-	border-left:1px solid black;
-	border-top:1px solid black;
-	border-bottom:1px solid black;
-	border-right:2px solid white;
+	background-color:rgba(0,0,0,0.6);
+	border-left:1px solid rgba(0,0,0,0.6);
+	border-top:1px solid rgba(0,0,0,0.6);
+	border-bottom:1px solid rgba(0,0,0,0.6);
+	border-right:1px solid rgba(0,0,0,0.6);
+	color:white;
 }
 #tabs ul li:hover{
 	background-color:rgba(0,0,0,0.6);
+	border-right:1px solid rgba(0,0,0,0.6);
 	color:white;
 }
 
@@ -165,7 +183,7 @@ form p>* {
 	width:1300px;
 	height:150%;
 	border:1px solid black;
-	z-index: 1;
+	z-index: 2;
 }
 
 .hide{
@@ -219,7 +237,7 @@ form p>* {
 	height:89%;
 	margin:auto auto;
 	
-	background-color:white;
+	background-color:rgba(255,255,255,0.51);
 
 }
 
