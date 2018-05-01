@@ -1,0 +1,158 @@
+body{
+	font-family: "times new roman";
+	background-image: url("http://vitlt.com/wp-content/uploads/2017/05/graphic-design-office-2innovate-graphic-design-office.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+nav{
+	margin: auto;
+	position: relative;
+	width: 30%;
+	font-size: 24px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+}
+
+li{
+	border-left: 1px solid black;
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+
+li a{
+	color: black;
+	background-color: white;
+	text-decoration: none;
+}
+#bar{
+	width: auto;
+	height: 80px;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+}
+
+#logo{
+	width: 70%;
+}
+
+#search{
+	display: inline;
+}
+
+.main_container{
+	height: 88%;
+	width: auto;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#search_bar{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+	text-align: center;
+}
+
+input{
+	width: 400px;
+	height: 50px;
+}
+
+.button input{
+	width: 100px;
+	height: 55px;
+}
+
+#login_frame, #register_frame {  
+    width: 400px;  
+    height: 400px;  
+    padding: 13px;  
+    position: absolute;  
+    left: 50%;  
+    top: 50%;  
+    margin-left: -200px;  
+    margin-top: -200px;  
+    background-color: rgba(240, 255, 255, 0.5);  
+    border-radius: 10px;  
+    text-align: center;  
+}
+
+#login_logo {  
+    margin-top: 22px;  
+}
+
+label {
+    font-size: 18px;
+    font-family: "Times New Roman";
+    width: 100px;
+    height: 35px;
+    line-height: 28px;
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text_field {
+    width: 278px;
+    height: 35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+#login_button, #register_button {
+    font-size: 20px;
+    font-family: "Times New Roman";
+
+    width: 150px;
+    height: 35px;
+    line-height: 28px;
+    text-align: center;
+	vertical-align: middle;
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+
+    float: left;
+}
+
+#forget_pwd {  
+    font-size: 12px;  
+    color: black;  
+    text-decoration: none;  
+    position: relative;  
+    float: right;  
+    top: 5px;  
+  
+}  
+  
+#forget_pwd:hover {  
+    color: blue;  
+    text-decoration: underline;  
+}
+
+#login_control, #register_control {  
+    padding: 0 28px;  
+}
