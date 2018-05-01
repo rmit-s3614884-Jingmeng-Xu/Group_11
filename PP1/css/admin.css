@@ -1,0 +1,40 @@
+*{
+	margin:0;
+}
+#logo{
+	position:absolute;
+	width:9%;
+}
+#square1,#square2,#square3{
+	width:120px;
+	height:60px;
+	line-height: 60px;
+	vertical-align: middle;
+	color:black;
+	float:right;
+	background-color:white;
+	border-left:1px solid black;
+	text-align:center;
+	font-size: 21px;
+    font-family: "Times New Roman";
+	
+}
+#square1:hover,
+#square2:hover,
+#square3:hover{
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+} 
+#bar{
+	width:100%;
+	height:60px;
+	background-color:white;
+	padding: 0;
+	margin:0;
+
+}
+body {
+    background-image:url(../image/1.webp);
+    background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
