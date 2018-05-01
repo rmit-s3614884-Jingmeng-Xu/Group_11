@@ -3,45 +3,37 @@
 <head>
 <title>Uuser profile page</title>
 <link rel="stylesheet" type="text/css" href="css/home.css" />
-
 </head>
 
 <body>
 <div id="bar">
-  <div id="logo">
-    <image src="image/1.png"></image>
+  <div >
+   <a href="home.html"><image id="logo" src="image/1.png"></image></a> 
   </div>
-  <div id="square3" style="width:120;height:80;text-align:center;line-height:80px;">About</div>
+  <div id="square3" >About</div>
   <a href="login.html">
-  <div id="square2" style="width:120;height:80;text-align:center;line-height:80px;">Login</div>
+  <div id="square2" >Login</div>
   </a> <a href="register.html">
-  <div id="square1" style="width:120;height:80;text-align:center;line-height:80px;">Register</div>
+  <div id="square1">Register</div>
   </a> </div>
+
 <div id="shadow">
-  <image src="image/temp1.png" id="proimage"></image>
-
+ <div  id="barimage"></div> 
+	<table id="times">
+  <tr>
+    <td>Participating </td>
+    <td>Published</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+</table>
   <div id="shadow1">
-    <div id="divcss5"><image src="image/userimage.png" id="userimage"></image></div>
-    <span id="username">Alex</span>
-	  
-	  <span >
-    <table id="times">
-      <tr>
-		     <td>Participating </td>
-		<td>Published</td>
-       
-      </tr>
-      <tr>
-      <td>0</td>
-        <td>0</td>
-      </tr>
-    </table>
-    </span>
-	  <a href="#" class="myButton"><span id="editprofile">Edit profile</span>
-	  </a>
-	 
-	 </div>
-
+    <div id="divcss5">
+      <image src="image/userimage.png" id="userimage"></image>
+    </div>
+    <span id="username">Alex</span> <a href="#" class="myButton"><span id="editprofile">Edit profile</span> </a></div>
   <script type="text/javascript">
          window.onload = function(){
              var oTab = document.getElementById("tabs");
@@ -65,24 +57,21 @@
              };
          }
     </script>
-	<div id="tabs">
-	  <ul>
-		  <li class="on">Profile</li>
-		   <li>Publish event</li>
-		<li>Participating</li>
-		<li>Published</li>
-		 
-		<li >Exit</li>
-	  </ul>
-		
-	<div> 用户信息</div>
-		<div class="hide">发布活动 </div>
-	<div class="hide"> 参与的活动</div>
-	<div class="hide">发布过的活动 </div>
-		
-		<div class="hide">退出 </div>
+  <div id="tabs">
+    <ul>
+      <li class="on">Profile</li>
+      <li>Publish event</li>
+      <li>Participating</li>
+      <li>Published</li>
+      <li >Exit</li>
+    </ul>
+    <div> 用户信息</div>
+    <div class="hide">发布活动 </div>
+    <div class="hide"> 参与的活动</div>
+    <div class="hide">发布过的活动 </div>
+    <div class="hide">退出 </div>
   </div>
 </div>
-	<div id="shadow2"></div>
+
 </body>
 </html>
