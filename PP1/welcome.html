@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>Navigation</title>
-    <!--2秒后跳转到自定义页面-->
-    
+    <meta http-equiv="refresh" content="2; url=http://titan.csit.rmit.edu.au/~s3495287/wp/PP1/profile.html" />
     <style type="text/css">
         @font-face{
             font-family: "MAILR___";
@@ -14,12 +13,12 @@
             font-size: 70px;
         }
         .blur { 
-                filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
-                -webkit-filter: blur(5px); /* Chrome, Opera */
+                filter: url(blur.svg#blur); 
+                -webkit-filter: blur(5px); 
                 -moz-filter: blur(5px);
                 -ms-filter: blur(5px);    
                     filter: blur(5px);
-                filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false); /* IE6~IE9 */
+                filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false); 
         }
         .hvcenter{
             position: absolute;
@@ -31,11 +30,11 @@
         window.onload=CurrentTime;
         function CurrentTime(){ 
                 var now = new Date();
-                var year = now.getFullYear();       //年
-                var month = now.getMonth() + 1;     //月
-                var day = now.getDate();            //日
-                var hh = now.getHours();            //时
-                var mm = now.getMinutes();          //分
+                var year = now.getFullYear();       
+                var month = now.getMonth() + 1;   
+                var day = now.getDate();          
+                var hh = now.getHours();          
+                var mm = now.getMinutes();        
                
                 var clock = year + " - ";
                 if(month < 10)
