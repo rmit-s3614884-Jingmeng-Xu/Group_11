@@ -28,7 +28,7 @@
 					<form action="index.php" method="POST">
 						<label>User name</label><input type="text" name="username" value="" id="username" class="text_field" required /><br><br>
 						<label>Password</label><input type="password" name="password" value="" id="password" class="text_field" required /><br><br>
-						<div id="L/R_control">
+						<div id="login_control">
 							<input type="submit" id="login_button" onclick="login()" value="Login"/>
 							<a href="forget_pwd.php" id="forget_pwd">Forget your password?</a>
 						</div>
