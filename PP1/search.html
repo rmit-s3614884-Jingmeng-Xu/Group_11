@@ -6,73 +6,42 @@
 </head>
 
 <body>
-	 
+	  <script type="text/javascript">
+         window.onload = function(){
+             var oTab = document.getElementById("events");
+             var oU = con.getElementById("condition");
+             var divs = oU.getElementsByTagName("div");
+             var oDivs= divs.getElementsByTagName("div");
+
+             for(var i= 0,len = oLis.length;i<len;i++){
+                 oLis[i].index = i;
+                 oLis[i].onclick = function() {
+                     for(var n= 0;n<len;n++){
+						
+							 oLis[n].className = "";
+							 oDivs[n].className="hide";
+						
+                     }
+					
+						  this.className ="on";
+                     oDivs[this.index].className = "";
+                 }
+             };
+         }
+    </script>
 <div id="shadow">
-<div id="bar1">
-  <div >
-    <a href="home.html"><image src="image/1.png" id="logo"></image></a>
-  </div>
+<div id="bar">
+  <div > <a href="home.html">
+    <image src="image/1.png" id="logo"></image>
+    </a> </div>
   <a href="profile.html">
   <div id="square3" >About</div>
   </a> <a href="login.html">
   <div id="square2">Login</div>
-  </a> <a href="register.html">
-  <div id="square1">Register</div>
+  </a> <a href="home.html">
+  <div id="square1">Home</div>
   </a> </div>
-<div id="bar"></div>
-	</div>
-	 <script type="text/javascript">
-         window.onload = function(){
-             var oTab = document.getElementById("events");
-             var oUl = document.getElementById("condition");
-             var oLis = oUl.getElementsByTagName("div");
-             var oDivs= oTab.getElementsByClassName("event");
-			
-             for(var i= 0,len = oLis.length;i<len;i++){
-                 oLis[i].index = i;
-                 oLis[i].onclick = function() {
-			
-					 for(var n= 0,lend=oLis.length;n<lend;n++){
-						oLis[n].className="";
-                     	}
-					 if(this.index==0){
-						 oLis[this.index].className="on";
-						for(var n= 0,lend=oDivs.length;n<lend;n++){
-						
-							oDivs[n].className="event";
-							
-							
-                     	}
-						 
-					 }
-					 if(this.index==1){
-						 oLis[this.index].className="on";
-						for(var n= 0,lend=oDivs.length;n<lend;n++){
-							oDivs[n].className="event";
-							var sp=oDivs[n].getElementsByTagName("span")[4];
-							if(sp.className=="close"){
-								oDivs[n].className+=" "+"hide";
-							}
-                     	}
-						 
-					 }
-					 if(this.index==2){
-						oLis[this.index].className="on";
-						for(var n= 0,lend=oDivs.length;n<lend;n++){
-							var sp=oDivs[n].getElementsByTagName("span")[4];
-							oDivs[n].className="event";
-							if(sp.className=="button"){
-								oDivs[n].className+=" "+"hide";
-							}
-                     	}
-						 
-					 }
-					 
-					 
-                }
-     		}
-         }
-    </script>
+	
 <div id="searchbar">
   <div id="search"> <span>
     <input type="text" class="form-control">
@@ -80,7 +49,7 @@
     <div class="search-button"><i class="icon-search-white"></i><span class="search-text">Search</span></div>
     </a> </div>
 	<div id="condition"  >
-	<div class="on">All</div>
+	<div>All</div>
 		<div>Ongoing</div>
 		<div>Closed</div>
 	</div>
@@ -123,36 +92,6 @@
 		<div class="event">
 		<image class="img" src="image/userimage.png"></image>
 		<span class="user">User4</span>
-		<span class="title">Title:xxxxxxxxxxxxxxxxxxxxxxxxxx<br></span>
-		<span class="content">Content:xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-			<span class="date">Start date:14/5/18</span>
-			<span class="button">Join</span>
-		</div>
-		<div class="event">
-		<image class="img" src="image/userimage.png"></image>
-		<span class="user">User5</span>
-		<span class="title">Title:xxxxxxxxxxxxxxxxxxxxxxxxxx<br></span>
-		<span class="content">Content:xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-			<span class="date">Start date:14/5/18</span>
-			<span class="button">Join</span>
-		</div>
-		<div class="event">
-		<image class="img" src="image/userimage.png"></image>
-		<span class="user">User6</span>
-		<span class="title">Title:xxxxxxxxxxxxxxxxxxxxxxxxxx<br></span>
-		<span class="content">Content:xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
-			<span class="date">Start date:14/5/18</span>
-			<span class="close">Closed</span>
-		</div>
-		<div class="event">
-		<image class="img" src="image/userimage.png"></image>
-		<span class="user">User7</span>
 		<span class="title">Title:xxxxxxxxxxxxxxxxxxxxxxxxxx<br></span>
 		<span class="content">Content:xxxxxxxxxxxxxxxxxxxxxxxxxx<br>
 			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
