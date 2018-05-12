@@ -1,5 +1,5 @@
 </head>  
-<link rel="stylesheet" type="text/css" href="css/editprofile.css" />
+<link rel="stylesheet" type="text/css" href="css/createevents.css" />
 <body>  
         <div id="bar">
                 <div >
@@ -13,17 +13,24 @@
                 </a> </div>
         <div class="Content-Main">  
             <form  action="" method="post" class="form-userInfo">  
-                <h1>Personal Information</h1>  
+                <h1>Create Event</h1>  
                 <span class="text1">Please finish your personal information in the text box：</span>  
-                <p>  
+                <p>
+                <label>  
+                    <span>event name :</span>  
+                     <input type="text" name="eventname" placeholder="your event name">  
+                </label>
+                <label>  
+                     <span>start time :</span>  
+                     <input type="datetime-local" value="2018-00-00T00:00:00"/>  
+                </label>
+                <label>  
+                     <span>Host place :</span>  
+                     <input type="location" name="place" placeholder="where?">  
+                </label>        
                 <label>  
                     <span>Your name:</span>  
                     <input type="text"  name="name" placeholder="Your Full Name">  
-                </label>  
-                <label class="Main-sex">  
-                    <span>Your sex:</span>  
-                    <input type="radio" name="box" class="man">Male  
-                    <input type="radio" name="box"  class="women">Female  
                 </label>  
                 <label>  
                     <span>Your email :</span>  
@@ -34,8 +41,8 @@
                     <input type="text" name="phone" placeholder="Please input 9 number">  
                 </label>  
                 <label>  
-                    <span>Message:</span>  
-                    <textarea id="message" name="message" placeholder="Your message to us"></textarea>  
+                    <span>Describe:</span>  
+                    <textarea id="message" name="message" placeholder="About events"></textarea>  
                 </label>  
                 <label>  
                     <input type="button" class="button" value="Submit">  
