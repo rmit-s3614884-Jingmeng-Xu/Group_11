@@ -11,7 +11,7 @@ function login() {
   
         alert("Please enter a password");  
   
-    } else if(username.value == "admin" && pass.value == "123456"){  
+    } else if(username.value == "alex" && pass.value == "123456"){  
   
         window.location.href="welcome.html";  
   
