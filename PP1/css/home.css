@@ -9,7 +9,10 @@ body {
     height: 100%;
     width: 100%;
 }
-
+#lg:hover,
+#re:hover{
+	color:black;
+}
 #logo {
     position: absolute;
 	width:9%;
@@ -18,28 +21,43 @@ body {
 #divcss5 img{ border-radius:50%}
 #square1,
 #square2,
-#square3 {
+#square3,
+#square4,
+#square5{
     width: 120px;
     height:60px;
     color: black;
     float: right;
 	line-height: 60px;
-    border-left: 1px solid black;
     text-align: center;
     vertical-align: middle;
     font-size: 21px;
     font-family: "Times New Roman";
+	cursor:pointer;
+}
+
+
+#square1{
+	width:200px;
 }
 #square1:hover,
 #square2:hover,
-#square3:hover{
+#square3:hover,
+#square5:hover
+{
+	border-radius: 50px;
 	background-color:rgba(0,0,0,0.5);
 	color:white;
 } 
+#square4{
+	border-radius: 50px;
+	background-color:rgba(0,0,0,0.5);
+	color:white;
+}
 #bar {
     width: 100%;
     height: 60px;
-    background-color: white;
+    
     padding: 0;
     margin: 0;
 	
@@ -47,8 +65,8 @@ body {
 #bar1 {
     width: 100%;
     height: 60px;
-    background-color: rgba(255,255,255,1);
-	border-bottom: 1px solid black;
+    background-color: rgba(255,255,255,0);
+	
     padding: 0;
     margin: 0;
 	
@@ -68,20 +86,6 @@ body {
   height:70px;
   width:auto;
 	z-index: 30;
-}
-#login_frame {
-    width: 400px;
-    height: 260px;
-    padding: 13px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -200px;
-    margin-top: -150px;
-    background-color: rgba(240, 255, 255, 0.5);
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
 }
 
 #times{
@@ -127,8 +131,8 @@ body {
 }
 #username{
 	position:relative;
-	top:-160px;
-	left:240px;
+	top:0px;
+	
 	color:white;
 	font-size:25px;
 	font-family: "Times New Roman";
@@ -160,7 +164,7 @@ form p>* {
 	left:-30px;
 	width:100%;
 	z-index: 3;
-
+	cursor:pointer;
 }
 #tabs ul li{
 	list-style:none;
@@ -225,13 +229,7 @@ form p>* {
     border-bottom-left-radius: 5px;
 }
 
-.text_field {
-    width: 278px;
-    height: 35px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 0;
-}
+
 
 #btn_login {
     font-size: 20px;
@@ -309,3 +307,120 @@ form p>* {
 .search-text{
     margin-left: 7px;
 }
+
+#login_frame {  
+    width: 400px;  
+    height: 400px;  
+    padding: 13px;  
+  
+    position: absolute;  
+    left: 50%;  
+    top: 50%;  
+    margin-left: -200px;  
+    margin-top: -200px;  
+  	
+    background-color: rgba(240, 255, 255, 0.5); 
+    border-radius: 5px;  
+    text-align: center;  
+}  
+#logindiv{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	position:absolute;
+	top:0px;
+	display:none;
+} 
+#registerdiv{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	position:absolute;
+	top:0px;
+	display:none;
+}
+#close{
+	position:relative;
+	width:10px;
+	right:-390px;
+	top:-10px;
+	font-size:20px;
+	cursor:pointer;
+}
+#closer{
+	position:relative;
+	width:10px;
+	right:-390px;
+	top:-10px;
+	font-size:20px;
+	cursor:pointer;
+}
+form p > * {  
+    display: inline-block;  
+    vertical-align: middle; 
+	margin-bottom: 20px;
+}  
+  
+#image_logo {  
+    margin-top: 22px;  
+}  
+  
+.label_input {
+    font-size: 18px;
+    font-family: "Times New Roman";
+
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+
+
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text_field {
+    width: 278px;
+    height: 33px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+  
+#btn_login {
+    font-size: 20px;
+    font-family: "Times New Roman";
+
+    width: 150px;
+    height: 35px;
+    line-height: 28px;
+    text-align: center;
+	vertical-align: middle;
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+
+    float: left;
+}
+  
+  
+#forget_pwd {  
+    font-size: 12px;  
+    color: black;  
+    text-decoration: none;  
+    position: relative;  
+    float: right;  
+    top: 5px;  
+  
+}  
+  
+#forget_pwd:hover {  
+    color: blue;  
+    text-decoration: underline;  
+}  
+  
+#login_control {  
+    padding: 0 28px;  
+}  

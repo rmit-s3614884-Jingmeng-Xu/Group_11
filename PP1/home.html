@@ -12,12 +12,16 @@
     <image src="image/1.png" id="logo"></image>
   </div>
   <a href="profile.html">
-  <div id="square3" >About</div>
-  </a> <a href="login.html">
-  <div id="square2">Login</div>
-  </a> <a href="register.html">
-  <div id="square1">Register</div>
-  </a> </div>
+  
+  </a> 
+  <div id="square1" ><span id="lg" onclick="displayLogin()">Login</span> / <span id="re" onclick="displayRegister()">Register</span></div>
+
+  
+	<div id="square2" >Help</div>
+	<a href="profile.html"><div id="square3" >About</div></a>
+	
+	<a href="home.html"><div id="square4" >Home</div></a>
+  </div>
 <div class="container">
   <div class="row">
     <div class="input-group">
@@ -29,5 +33,50 @@
     </div>
   </div>
 </div>
+	<div id="logindiv" ><div id="login_frame">  
+  	<div id="close" onclick="hideLogin()">x</div>
+    <p id="image_logo"><img src="image/Login.png"></p>  
+  
+    <form method="post" action="login.js">  
+  
+        <p><label class="label_input">User name</label><input type="text" id="username" class="text_field"/></p>  
+        <p><label class="label_input">Password</label><input type="password" id="password" class="text_field"/></p>  
+  
+        <div id="login_control">  
+            <input type="button" id="btn_login" value="Login" onclick="login();"/>  
+            <a id="forget_pwd" href="forget_pwd.html">Forget the password?</a>  
+        </div>  
+    </form>  
+</div> </div>
+	
+	<div id="registerdiv">
+	
+	<div id="login_frame">
+		<div id="closer" onclick="hideRegister()">x</div>
+        <p id="image_logo"></p>
+
+        <form method="post" action="register.js">
+
+            <p>
+                <label class="label_input">User Name</label>
+                <input type="text" id="username" class="text_field" />
+            </p>
+            <p>
+                <label class="label_input">Password</label>
+                <input type="text" id="password" class="text_field" />
+            </p>
+            <p>
+                <label class="label_input">Confirm</label>
+                <input type="text" id="confirmpassword" class="text_field" />
+            </p>
+            <div id="login_control">
+                <spam align="center">
+                    <input type="button" id="btn_login" value="Register" onclick="register();" />
+                </spam>
+            </div>
+
+        </form>
+    </div>
+	</div>
 </body>
 </html>
