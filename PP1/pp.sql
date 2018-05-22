@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version phpStudy 2014
--- http://www.phpmyadmin.net
---
--- 主机: localhost
--- 生成日期: 2018 年 05 月 15 日 19:40
--- 服务器版本: 5.6.16
--- PHP 版本: 5.5.9
+
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,19 +10,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- 数据库: `pp`
---
-
--- --------------------------------------------------------
 
 --
--- 表的结构 `users`
+
+-- --------------------------------------------------------`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
   `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `Username` varchar(32) NOT NULL DEFAULT '',
-  `Access` int(11) NOT NULL DEFAULT '0' COMMENT '1 管理员 0 员工 2 发单员',
+  `Access` int(11) NOT NULL DEFAULT '0' COMMENT '1 administrator 0 staff 2 viewer',
   `Password` char(40) NOT NULL DEFAULT '',
   `Created` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `Name` varchar(255) DEFAULT NULL,
@@ -38,8 +28,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
 
---
--- 转存表中的数据 `users`
+
 --
 
 INSERT INTO `users` (`ID`, `Username`, `Access`, `Password`, `Created`, `Name`, `Address`, `status`) VALUES
