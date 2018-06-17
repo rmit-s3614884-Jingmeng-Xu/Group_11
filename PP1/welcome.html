@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation</title>
+    <meta http-equiv="refresh" content="2; url=profile.html" />
+    <style type="text/css">
+        @font-face{
+            font-family: "MAILR___";
+            src:url("MAILR___.TTF");
+        }
+        p{
+            font-family: MAILR___;
+            font-size: 70px;
+        }
+        .blur { 
+                filter: url(blur.svg#blur); 
+                -webkit-filter: blur(5px); 
+                -moz-filter: blur(5px);
+                -ms-filter: blur(5px);    
+                    filter: blur(5px);
+                filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false); 
+        }
+        .hvcenter{
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=CurrentTime;
+        function CurrentTime(){ 
+                var now = new Date();
+                var year = now.getFullYear();       
+                var month = now.getMonth() + 1;   
+                var day = now.getDate();          
+                var hh = now.getHours();          
+                var mm = now.getMinutes();        
+               
+                var clock = year + " - ";
+                if(month < 10)
+                    clock += "0";
+                clock += month + " - ";
+                if(day < 10)
+                        clock += "0";
+                clock += day + "&nbsp;&nbsp;&nbsp;";
+                if(hh < 10)
+                        clock += "0";
+                clock += hh + " : ";
+                if (mm < 10) 
+                    clock += '0'; 
+                clock += mm; 
+                document.getElementById("time").innerHTML=clock;
+                if(hh>=6&&hh<=12){
+                    document.getElementById("sayhi").innerHTML="Good morning, Mate";
+                    document.getElementById("myimg").src="image/Morning.jpg";
+                }
+                else if(hh>=13&&hh<=16){
+                    document.getElementById("sayhi").innerHTML="Good noon, Mate";
+                    document.getElementById("myimg").src="image/Noon.jpg";
+                }
+                else if(hh>=17&&hh<=18){
+                    document.getElementById("sayhi").innerHTML="Good afternoon, Mate";
+                    document.getElementById("myimg").src="image/Afternoon.jpg";
+                }
+                else{
+                    document.getElementById("sayhi").innerHTML="Good evening, Mate";
+                    document.getElementById("myimg").src="image/Night.jpg";
+                }
+        } 
+    </script>
+</head>
+<body>
+    <div id="bg_pic" style="position:absolute; width:100%; height:100%; z-index:-1">
+        <img id="myimg" src="logo.png" alt="backgroundpicture"  class="blur" width="100%" height="100%">
+    </div>
+    <div id="" style="width:1000px; height:500px;  text-align:center" class="hvcenter" >
+            <p id="sayhi"></p>
+            <p id="time"></p>
+    </div>
+</body>
+</html>
