@@ -31,6 +31,7 @@ if (!isset ($_SESSION['user']))
 		    <a href="createevent.php"><li>Publish event</li></a>
       <a href="participating.php"><li>Participating</li></a>
       <a href="published.php"><li>Published</li></a>
+      <a href="aboutus.php"><li>Aboutus</li></a>
       <a href="logout.php"><li >Exit</li></a>
     </ul>
     <div>

@@ -1,0 +1,84 @@
+.aboutus {
+    position: relative;
+  }
+  .aboutus .col-md-3:nth-child(2) .aboutus-item span {
+    background-image: url(http://wiki.ubc.ca/images/thumb/e/e4/Globe.png/50px-Globe.png);
+  }
+  .aboutus .col-md-3:nth-child(2) .aboutus-item span:hover {
+    background-image: url(http://kidsroom.in.ua/image/cache/catalog/1457916274_Tyres_1-50x50.png);
+  }
+  .aboutus .head-text {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .aboutus .head-text h2 {
+    position: relative;
+    font-family: "RalewayThin", sans-serif;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+  .aboutus .head-text h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 1px solid #17daa3;
+    width: 30px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+  }
+  .aboutus .head-text p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  .aboutus .aboutus-item {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .aboutus .aboutus-item span {
+    left: 50%;
+    margin-left: -90px;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    display: block;
+    border-radius: 10em;
+    transition: all 0.5s;
+    background-image: url(http://kidsroom.in.ua/image/cache/catalog/1457916274_Tyres_1-50x50.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  .aboutus .aboutus-item span:hover {
+    background-color: white;
+    background-image: url(http://wiki.ubc.ca/images/thumb/e/e4/Globe.png/50px-Globe.png);
+  }
+  .aboutus .aboutus-item h4 {
+    font-family: "RalewayRegular", sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .aboutus .aboutus-item p {
+    font-family: "ProximaNovaRegular", sans-serif;
+    color: black;
+  }
+  
+  footer{ 
+   background-color: #F8F8F8;
+      border-top: 1px solid #E7E7E7;
+      text-align:center;
+      padding:20px;
+       position: absolute;
+      left: 0;
+      bottom: 0;
+      
+      height: 45px;
+      width: 100%
+  }
+  
