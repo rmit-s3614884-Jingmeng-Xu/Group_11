@@ -1,6 +1,6 @@
 <?php
-$db_host='127.0.0.1';
+$db_host='localhost';
 $db_name='pp';
 $db_user='root';
-$db_pass='123456';
+$db_pass='Roa8579uQw40zsC';
 ?>

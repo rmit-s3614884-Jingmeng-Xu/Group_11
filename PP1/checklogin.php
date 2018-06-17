@@ -20,21 +20,29 @@ if($user_name=="" || $password=="")
 //check username
 require_once('mysql_connect.php');
 $qry="select * from users where Username='$user_name' and Password='$password'";
-$result=mysql_query($qry) or die(mysql_error());
-$row=mysql_fetch_array($result,MYSQL_ASSOC);
+$result=mysqli_query($dbc,$qry) or die(mysqli_error($dbc));
+$row=mysqli_fetch_array($result);
 //echo $num;
 if($row)
 {
-    $_SESSION['user'] = $user_name;
-    $_SESSION['pms']= $row['Access'];
-    mysql_close();
-    echo "<script language='javascript'>window.location.href='index.php';</script>" ;		
+    if(1 !== intval($row['status'])) {
+        mysqli_close($dbc);
+        echo "<script language='javascript'>" ;
+        echo "alert('user is not activated');" ;
+        echo "window.location.href='login.php';";
+        echo "</script>"; 
+    } else {
+        $_SESSION['user'] = $user_name;
+        $_SESSION['pms']= $row['Access'];
+        mysqli_close($dbc);
+        echo "<script language='javascript'>window.location.href='index.php';</script>" ;		
+    }
 }
 else {
-    mysql_close();
+    mysqli_close($dbc);
     echo "<script language='javascript'>" ;
     echo "alert('username or password is error');" ;
-    echo "window.location.href='index.php';";
+    echo "window.location.href='login.php';";
     echo "</script>";
 }
 

@@ -6,42 +6,44 @@ function login() {
     if (username.value == "") {  
   
         alert("Please enter a username");  
+        return false;
   
     } else if (pass.value  == "") {  
   
-        alert("Please enter a password");  
+        alert("Please enter a password");
+        return false;  
   
-    } else if(username.value == "alex" && pass.value == "123456"){  
-  
-        window.location.href="welcome.html";  
-  
-    } else {  
-  
-        alert("Please enter the correct username and password!")  
+    }  else {  
+        return true;
   
     }  
 }  
 function register() {
 
     var username = document.getElementById("username");
-    var pass = document.getElementById("password");
-	var confirmpassword=document.getElementById("confirmpassword");
+    var pass = document.getElementById("regpassword");
+   	var confirmpassword=document.getElementById("regconfirmpassword");
+   	
+   	console.log(pass.value);
+   	console.log(confirmpassword.value);
     if (username.value === "") {
 
         alert("Please enter user name");
+        return false;
 
     } else if (pass.value  === "") {
 
         alert("Please enter password");
+        return false;
 
     } else if(confirmpassword.value  !== pass.value){
 
         alert("Your confirm password is not correct");
+        return false;
 
     }else{  
-  
-        window.location.href="login.html";  
-	}
+        return true;
+    }
 }
 
 function displayLogin() {  

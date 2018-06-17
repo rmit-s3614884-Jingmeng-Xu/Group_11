@@ -14,67 +14,21 @@ echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />" ;
 
 <body>
 <div id="bar1">
-  <div >
-    <image src="image/1.png" id="logo"></image>
-  </div>
-  <a href="profile.html">
-  </a> 
-  
-
-  <?php 
-  if (isset ($_SESSION['user'])) {
-  ?>
-  <a href="logout.php"><div id="square1" >Logout</div></a>
-  <?php } else { ?>
-  
-  
-  <div id="square1" ><span id="lg" onclick="displayLogin()">Login</span> / <span id="re" onclick="displayRegister()">Register</span></div>
-
-  <?php } ?>
-	<div id="square2" >Help</div>
-	<a href="profile.html"><div id="square3" >About</div></a>
-	
-	<a href="home.html"><div id="square4" >Home</div></a>
-  </div>
-  
-
-  <?php 
-  if (isset ($_SESSION['user'])) {
-  ?>
-
-<div  id="barimage"> 
-  </div> 
-
-	<table id="times" style="top: 70px;">
-  <tr>
-    <td>Participating </td>
-    <td>Published</td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-</table>
-  <div id="shadow1">
-    
-    <div id="divcss5">
-      <image src="image/userimage.png" id="userimage"></image>
-      <span id="profileusername"><?php echo $_SESSION['user'];?> <a href="editprofile.html" class="myButton"><span id="editprofile">Edit profile</span> </a></span> 
-    </div>
-    
-    
-    </div>
-    
- <?php } ?>   
+<?php require_once('menu.php'); ?>
   
 <div class="container">
   <div class="row">
-    <div class="input-group">
-   <span>
-        <input type="text" class="form-control">
-        </span>
-       <a href="search.html"><div class="search-button"><i class="icon-search-white"></i><span class="search-text">Search</span></div></a>
-     
+    <div class="input-group" style="top:30%">
+        <form action="search.php" method="GET" >
+        <span><input type="text" class="form-control" name="keywords"></span>
+        <div class="search-button">
+            <i class="icon-search-white"></i>
+            <input type="submit" value="Search" style="width: 70px;height: 35px;background: #00a1d6;border: none;color: white;"/>    
+            
+        </div>
+        
+        <!--<a href="search.html"><div class="search-button"><i class="icon-search-white"></i><span class="search-text">Search</span></div></a>-->
+       </form>
     </div>
   </div>
 </div>
